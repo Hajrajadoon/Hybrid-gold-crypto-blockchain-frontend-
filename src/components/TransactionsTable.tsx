@@ -1,30 +1,24 @@
 import React from 'react';
-export default function TransactionsTable() {
-  const transactions = [
-    { date: '2025-08-24', type: 'Buy', amount: 10, value: 500, status: 'Completed' },
-    { date: '2025-08-23', type: 'Sell', amount: 5, value: 250, status: 'Completed' },
-  ];
-  return (
-    <Card className="mt-4">
-      <CardHeader><CardTitle>Transactions</CardTitle></CardHeader>
-      <CardContent>
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse border border-gray-200">
-            <thead>
-              <tr className="border-b">
-                <th>Date</th><th>Type</th><th>Amount</th><th>USD Value</th><th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {transactions.map((t, i) => (
-                <tr key={i} className="text-center border-b">
-                  <td>{t.date}</td><td>{t.type}</td><td>{t.amount} GDT</td><td>${t.value}</td><td>{t.status}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
+
+const TransactionsTable = () => (
+  <table className="w-full text-left border-collapse border">
+    <thead>
+      <tr>
+        <th className="border px-2 py-1">ID</th>
+        <th className="border px-2 py-1">Type</th>
+        <th className="border px-2 py-1">Amount</th>
+        <th className="border px-2 py-1">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border px-2 py-1">1</td>
+        <td className="border px-2 py-1">Buy</td>
+        <td className="border px-2 py-1">100 GDT</td>
+        <td className="border px-2 py-1">2025-08-24</td>
+      </tr>
+    </tbody>
+  </table>
+);
+
+export default TransactionsTable;
