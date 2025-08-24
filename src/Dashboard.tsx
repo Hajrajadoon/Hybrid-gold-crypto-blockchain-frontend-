@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from './components/Tabs';
 import { Card, CardHeader, CardTitle, CardContent } from './components/Card';
-import { buyTokens, swapTokens, stakeTokens, Portfolio } from './components/SmartContracts';
 import { Button } from './components/Button';
 import NFTGallery from './components/NFTGallery';
 import TransactionsTable from './components/TransactionsTable';
