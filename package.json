@@ -1,5 +1,5 @@
 {
-  "name": "hybrid-gold-dashboard",
+  "name": "hybrid-gold-frontend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,13 +12,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "tailwindcss": "^3.3.2",
-    "framer-motion": "^10.12.16"
+    "framer-motion": "^10.12.16",
+    "sass": "^1.70.0",
+    "lucide-react": "^0.468.0"
   },
   "devDependencies": {
+    "typescript": "4.9.5",
     "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.7"
+    "@types/react-dom": "^18.2.7",
+    "postcss": "^8.4.27",
+    "autoprefixer": "^10.4.14"
   },
   "engines": {
     "node": "18.19.x",
