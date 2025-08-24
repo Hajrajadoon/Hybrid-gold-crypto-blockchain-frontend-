@@ -1,9 +1,7 @@
 import React from 'react';
+
 export const Chart = ({ title }: { title: string }) => (
-  <Card className="mt-4">
-    <CardHeader><CardTitle>{title}</CardTitle></CardHeader>
-    <CardContent>
-      <div className="h-48 bg-gray-100 flex items-center justify-center">Chart Placeholder</div>
-    </CardContent>
-  </Card>
+  <div className="p-4 bg-white shadow rounded h-48 flex items-center justify-center">
+    <p>{title} (Chart placeholder)</p>
+  </div>
 );
