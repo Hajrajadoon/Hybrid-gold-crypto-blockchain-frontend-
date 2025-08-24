@@ -7,6 +7,7 @@ import TransactionsTable from './components/TransactionsTable';
 import InvestorTable from './components/InvestorTable';
 import WalletConnect from './components/WalletConnect';
 import { Chart } from './components/Chart';
+import Liquidity from "./components/Liquidity";
 
 const tabs = {
   dashboard: { title: 'Dashboard', content: 'dashboard' },
