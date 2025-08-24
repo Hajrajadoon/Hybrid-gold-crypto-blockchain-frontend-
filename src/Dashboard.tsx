@@ -9,6 +9,7 @@ import WalletConnect from './components/WalletConnect';
 import { Chart } from './components/Chart';
 import Liquidity from "./components/Liquidity";
 
+// Define tabs with proper content type
 const tabs = {
   dashboard: { title: 'Dashboard', content: 'dashboard' },
   transactions: { title: 'Transactions', content: 'transactions' },
@@ -31,20 +32,17 @@ export default function Dashboard() {
       </header>
 
       {/* Tabs */}
-      <Tabs>
+      <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           {(Object.keys(tabs) as TabKey[]).map((tabKey) => (
-            <TabsTrigger
-              key={tabKey}
-              onClick={() => setActiveTab(tabKey)}
-            >
+            <TabsTrigger key={tabKey} value={tabKey}>
               {tabs[tabKey].title}
             </TabsTrigger>
           ))}
         </TabsList>
 
         {(Object.keys(tabs) as TabKey[]).map((tabKey) => (
-          <TabsContent key={tabKey}>
+          <TabsContent key={tabKey} value={tabKey}>
             {/* Dashboard Tab */}
             {tabKey === 'dashboard' && (
               <>
